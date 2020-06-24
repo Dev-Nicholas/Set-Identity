@@ -1,5 +1,5 @@
 # About:
-This allows you to set the identity of the lua state to 6.
+This allows you to set the identity of Roblox's lua state to 6.
 
 6/24/2020:
 The code fully works. It does need to be updated every roblox update.
