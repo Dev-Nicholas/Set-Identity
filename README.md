@@ -6,14 +6,15 @@ The code fully works. It does need to be updated every roblox update.
 
 ## Code:
 ```c++
-void identity_thread(int base_one, int base_two){
-	*(DWORD*)(*(DWORD*)(rl + base_one) + base_two) = 6;
+void identity_thread(int rstate, int base_one, int base_two){
+	*(DWORD*)(*(DWORD*)(rstate + base_one) + base_two) = 6;
 }
 ```
 
 ## Usage:
 ```c++
-identity_thread(108, 24);
+// rl - Roblox Lua State
+identity_thread(rl, 108, 24);
 ```
 
 ## Info:
